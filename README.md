@@ -6,7 +6,7 @@ CloudMeshFlared is a project that demonstrates how to securely send data from an
 
 ## Project Structure
 
-
+```
 CloudMeshFlared/
 ├── esp32/
 │   ├── CloudMeshFlared.ino
@@ -14,7 +14,7 @@ CloudMeshFlared/
 ├── worker/
 │   └── index.js
 └── README.md
-
+```
 
 * `esp32/`: Contains the ESP32 code.
 * `worker/`: Contains the Cloudflare Worker code.
