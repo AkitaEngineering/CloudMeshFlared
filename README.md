@@ -23,7 +23,7 @@ CloudMeshFlared is a project that demonstrates how to securely send data from an
         * `ArduinoJson` by Benoit Blanchon
 2.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/CloudMeshFlared.git](https://github.com/your-username/CloudMeshFlared.git)
+    git clone [https://github.com/akitaengineering/CloudMeshFlared.git](https://github.com/akitaengineering/CloudMeshFlared.git)
     cd CloudMeshFlared/esp32
     ```
 3.  **Configure:**
