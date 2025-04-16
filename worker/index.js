@@ -18,8 +18,13 @@ async function handleRequest(request) {
 
         // Process the data (example: store in KV)
         if (data) {
-            // Example: Store in Cloudflare KV (replace with your KV namespace)
-            await MY_KV_NAMESPACE.put(Date.now().toString(), JSON.stringify(data));
+            // Basic check for valid data (example: non-empty string)
+            if (typeof data === 'string' && data.trim() !== '') {
+                await MY_KV_NAMESPACE.put(Date.now().toString(), data);
+            }
+            else{
+              console.log("Invalid data received, not storing");
+            }
         }
 
         // Construct a response
@@ -43,3 +48,4 @@ async function handleRequest(request) {
         });
     }
 }
+
